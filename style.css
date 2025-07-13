@@ -19,6 +19,8 @@ body{
     width: 100%;
     padding: 10px;
     height: 70px;
+    font-family: "Monserrat", sans-serif;
+    letter-spacing: 2px;
 }
 .nav-link{
     list-style: none;
@@ -55,12 +57,97 @@ main {
     background-color: #f9f9f9;
     border-radius: 50px;
     box-shadow: 0 0 10px;
+    margin-bottom: 20px;
 }
-img {
+.imagen-web {
     display: block;
     border-radius: 30px;
     max-width: 100%;
     height: auto;
     margin: 1rem auto;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+.footer {
+    background-color: rgb(226, 193, 236);
+    padding: 10px 20px;
+    text-align: center;
+}
+.icono-red{
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.footer a:hover .icono-red {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
+    min-width: 300px;
+}
+.table th, .table td {
+border: 1px solid #ccc;
+padding: 10px;
+}
+.table thead {
+    background-color: #eee;
+}
+.table img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #333 ;
+}
+.table-contenedor {
+    overflow-x: auto;
+
+}
+.form {
+width: 100%;
+max-width: 600px;
+margin: 2rem auto;
+padding: 2rem;
+background-color: #f5e0fa;
+border-radius: 10%;
+box-shadow: 0 0 5px;
+font-family: "monserrat", sans-serif;
+}
+.form label {
+ display: block;
+ margin-bottom: 0.5rem;
+font-size: 1rem;
+}
+.form input:focus, .form textarea:focus {
+background-color: #d5a6df;
+color: rgb(0, 0, 0);
+padding: 0.8rem 0.5rem;
+border: none;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+.form button {
+     background-color: white;
+     color: rgb(0, 0, 0);
+     border-radius: 5px;
+     padding: 0.5rem 1rem;
+     border: none;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     box-shadow: 0 1px 3px;
+}
+.form button:hover{
+    background-color: #ead1f5;
+    color: rgb(186, 0, 223);
+}
+.form button:active {
+    transform: scale(0.9);
+    box-shadow: 0 6px 9px;
 }

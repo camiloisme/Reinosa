@@ -151,3 +151,56 @@ transition: background-color 0.5s ease;
     transform: scale(0.9);
     box-shadow: 0 6px 9px;
 }
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+    background-color: none;
+    border: none;
+    color: #d5a6df;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 15px;
+    }
+    .logo img{
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .nav-link li{
+        width: 100%;
+    }
+    .nav-link a{
+        display: block;
+        width: 100%;
+        padding: 8px 12px;
+        background-color:  rgb(210, 180, 230);
+        border-radius: 20px;
+        text-align: center;
+    }
+    .nav-link a:hover{
+        background-color: #d5a6df;
+        color: white;
+    }
+    .menu-toggle{
+        display: block;
+
+    }
+    .nav-link{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(226, 193, 236);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .nav-link.active
+{
+    display: flex;
+}    }

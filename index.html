@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reinosa Tech</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +15,10 @@
 <body>
     <header>
         <nav class="nav-bar" id="nav">
-        <div class="logo">
-            <a href="#"><img class="imagen-logo" src="/r (1).png" alt="logo reinosa"></a>
-        </div>
+        <a href="index.html"><img class="imagen-logo" src="/r (1).png" alt="logo reinosa"></a>
+        <button id="abrir" class="abrir-menu">Abrir</button>
         <ul class="nav-link">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
             <li>
                 <a href="index.html">Inicio</a>
             </li>
@@ -44,6 +45,19 @@
             </div>
             <p>&copy;2024 Reinosa Tech</p>
         </footer>
-    
+    <script>
+  const abrirBtn = document.getElementById('abrir');
+  const cerrarBtn = document.getElementById('cerrar');
+  const navLinks = document.querySelector('.nav-link');
+
+  abrirBtn.addEventListener('click', () => {
+    navLinks.classList.add('visible');
+  });
+
+  cerrarBtn.addEventListener('click', () => {
+    navLinks.classList.remove('visible');
+  });
+
+</script>
 </body>
 </html>

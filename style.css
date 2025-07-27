@@ -2,50 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    margin-top: 100px;
-    overflow-x: hidden;
-}
-.nav-bar {
-    background-color: rgb(226, 193, 236);
-    box-shadow: 0 2px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    height: 70px;
     font-family: "Monserrat", sans-serif;
-    letter-spacing: 2px;
 }
-.nav-link{
-    list-style: none;
-    justify-content: center;
+header{
     display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: #ef9dff;
+    box-shadow: 0 0 10px;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+
+}
+.nav-list li a{
     text-decoration: none;
+    color: #731486;
 }
-.nav-link a{
-    text-decoration: none;
-    color: rgb(132, 0, 255);
-    font-weight: 600;
-    transition: color 0.5s ease;
-}
-.nav-link a:hover{
-    color: rgb(129, 7, 167);
-}
-.logo img{
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-    object-fit: contain;
-    display: block;
+
+.logo {
+   max-width: 5rem;
 }
 main {
     width: 90%;
@@ -150,4 +129,50 @@ transition: background-color 0.5s ease;
 .form button:active {
     transform: scale(0.9);
     box-shadow: 0 6px 9px;
+}
+.abrir {
+    display: none;
+}
+.cerrar{
+    display: none;
+}
+@media screen and (max-width: 780px){
+    .abrir, .cerrar {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .abrir{
+        color: #752fbb;
+    }
+    .cerrar{
+        color:white;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:#752fbb;
+        padding: 2rem;
+        bottom: 0;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a{
+        color: white;
+    }
 }

@@ -48,21 +48,6 @@ main, .cookie-style {
     margin: 1rem auto;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 }
-.footer {
-    background-color: #e6d5f7;
-    padding: 10px 20px;
-    text-align: center;
-}
-.icono-red{
-    width: 30px;
-    height: 30px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-.footer a:hover .icono-red {
-    filter: grayscale(0%);
-    transform: scale(1.2);
-}
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -138,6 +123,94 @@ transition: background-color 0.5s ease;
 .cerrar{
     display: none;
 }
+.footer{
+    background-color:#e6d5f7;
+    display: flex;
+    box-shadow: 0 0 10px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    
+}
+.footer-logo img{
+    max-width: 5rem;
+    margin-top: 2rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+margin-bottom: 1.5rem;
+}
+.footer-links h3{
+    color: #57446b;
+   
+}
+.footer-links p strong a{
+    color: gray;
+    text-decoration: none;
+   
+}
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.footer-links p{
+    display: flex;
+}
+.footer-links ul li a{
+   text-decoration: none;
+   color: gray;
+  
+}
+.footer-suscribe{
+    color: #57446b;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+.footer-suscribe input{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: auto;
+    margin: 0 auto;
+}
+.footer-suscribe button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: auto;
+    margin: 0 auto;
+    background-color: #d5a6df;
+    color:#333;
+}
+.footer-suscribe button:hover{
+background-color: #57446b;
+color: white;
+cursor: pointer;
+}
+.footer-rs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-rs a i{
+    color: #333;
+}
+.copy{
+    color:#333;
+    margin-bottom: 5rem;
+}
 .cookies {
     display: flex;
     background-color: #752fbbe6;
@@ -152,6 +225,7 @@ transition: background-color 0.5s ease;
     z-index: 9999;
     flex-direction: column;
     gap: 1rem;
+    color: #ccc;
 }
 .aceptar, .rechazar{
     background-color:#731486;
@@ -180,7 +254,7 @@ transition: background-color 0.5s ease;
     margin: 0 auto;
     
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 500px){
     .abrir {
         display: block;
         background-color: transparent;
@@ -225,4 +299,81 @@ transition: background-color 0.5s ease;
     .nav-list li a{
         color: white;
     }
+    .footer{
+    background-color:#e6d5f7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px;
+    gap: 2rem;
+}
+.footer-logo img{
+    max-width: 5rem;
+    margin-top: 2rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer-links h3{
+    color: #57446b;
+   
+}
+.footer-links p strong a{
+    color: gray;
+    text-decoration: none;
+   
+}
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-links ul li a{
+   text-decoration: none;
+   color: gray;
+}
+.footer-suscribe{
+    color: #57446b;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer-suscribe input{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-suscribe button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #d5a6df;
+    color:#333;
+}
+.footer-suscribe button:hover{
+background-color: #57446b;
+color: white;
+cursor: pointer;
+}
+.footer-rs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-rs a i{
+    color: #333;
+}
+.copy{
+    color:#333;
+    margin-bottom: 5rem;
+}
 }

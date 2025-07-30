@@ -5,6 +5,10 @@
     font-family: "Monserrat", sans-serif;
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +29,7 @@ header{
 }
 
 .logo {
-   max-width: 5rem;
+   max-width: 4rem;
 }
 main, .cookie-style {
     width: 90%;
@@ -38,7 +42,7 @@ main, .cookie-style {
     border-radius: 50px;
     box-shadow: 0 0 10px;
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: 100px;
 }
 .imagen-web {
     display: block;
@@ -131,7 +135,6 @@ transition: background-color 0.5s ease;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    
 }
 .footer-logo img{
     max-width: 5rem;
@@ -200,6 +203,7 @@ cursor: pointer;
 }
 .footer-rs{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -209,7 +213,12 @@ cursor: pointer;
 }
 .copy{
     color:#333;
-    margin-bottom: 5rem;
+}
+.footer-copy{
+    text-align: center;
+    background-color: #e6d5f7;
+    padding-bottom: 1rem;
+   
 }
 .cookies {
     display: flex;
@@ -254,7 +263,7 @@ cursor: pointer;
     margin: 0 auto;
     
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
     .abrir {
         display: block;
         background-color: transparent;
@@ -287,6 +296,7 @@ cursor: pointer;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
         width: 50%;
         gap: 2rem;
+        transition: 0.3s ease;
     }
     .nav.visible{
         opacity: 1;
@@ -305,11 +315,12 @@ cursor: pointer;
     flex-direction: column;
     text-align: center;
     box-shadow: 0 0 10px;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 .footer-logo img{
-    max-width: 5rem;
-    margin-top: 2rem;
+    max-width: 4rem;
+    margin-top: .5rem;
 }
 .footer-links{
     display: flex;
@@ -328,7 +339,7 @@ cursor: pointer;
 .footer-links ul{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
 }
 .footer-links ul li a{
    text-decoration: none;
@@ -341,11 +352,11 @@ cursor: pointer;
     gap: .5rem;
 }
 .footer-suscribe input{
-    padding: .5rem 1rem;
+    padding: .5rem 5rem;
     border-radius: 10px;
     border: none;
     font-size: 1rem;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 .footer-suscribe button{
@@ -374,6 +385,15 @@ cursor: pointer;
 }
 .copy{
     color:#333;
-    margin-bottom: 5rem;
 }
+.footer-copy{
+    padding-bottom: 1rem;
+}
+.footer p,
+.footer h3,
+.footer ul,
+.footer form {
+    margin: 0;
+}
+
 }
